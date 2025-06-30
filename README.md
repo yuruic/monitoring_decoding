@@ -131,18 +131,19 @@ The evaluation scripts provide:
 4. Add tests if applicable
 5. Submit a pull request
 
-## License
-
-[Add your license information here]
-
 ## Citation
 
 If you use this code in your research, please cite:
 
 ```bibtex
-[Add your citation information here]
+@misc{chang2025monitoringdecodingmitigatinghallucination,
+      title={Monitoring Decoding: Mitigating Hallucination via Evaluating the Factuality of Partial Response during Generation}, 
+      author={Yurui Chang and Bochuan Cao and Lu Lin},
+      year={2025},
+      eprint={2503.03106},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2503.03106}, 
+}
 ```
 
-## Contact
-
-[Add your contact information here] 
