@@ -1,6 +1,6 @@
 # Monitoring Decoding
 
-A repository for implementing and evaluating monitoring-based decoding strategies for language models.
+A repository for implementing and evaluating monitoring-based decoding strategies for mitigating hallucination in LLM generation.
 
 ## Overview
 
@@ -9,8 +9,8 @@ This repository contains implementations of monitoring decoding algorithms that 
 ## Features
 
 - **Multi-model decoding**: Support for base and expert model combinations
-- **Multiple datasets**: GSM8K, TruthfulQA, TriviaQA, NQ-Open, XSum
-- **Comprehensive evaluation**: EM metrics, accuracy scores, performance analysis
+- **Multiple datasets**: GSM8K, TruthfulQA, TriviaQA, NQ-Open
+- **Comprehensive evaluation**: EM metrics, accuracy scores, Truthfulness, Informativeness
 - **Flexible configuration**: Command-line arguments for all parameters
 - **Modular design**: Clean, reusable code structure
 
@@ -48,7 +48,7 @@ python generate_text.py \
     --depth 4 \
     --branch 2 \
     --r 0.5 \
-    --data_num 100
+    --data_num 408
 ```
 
 ### Evaluation
@@ -73,9 +73,7 @@ python evaluation_em.py \
     --base_model Llama-2-7b \
     --expert_model Llama-2-70b \
     --width 4 \
-    --max_width 4 \
-    --depth1 3 \
-    --depth2 3 \
+    --depth 3 \
     --branch 2 \
     --r 0.3 \
     --data_num 1000 \
@@ -122,7 +120,6 @@ monitoring_decoding/
 
 The evaluation scripts provide:
 - **Accuracy scores** for each model
-- **Performance metrics** (timing, decode ratios)
 - **Statistical analysis** (mean, std, min, max)
 - **Detailed breakdowns** of correct/incorrect predictions
 
