@@ -4,7 +4,7 @@ A repository for implementing and evaluating monitoring-based decoding strategie
 
 ## Overview
 
-This repository contains implementations of monitoring decoding algorithms that use a base model and an expert model to improve text generation quality. The approach involves monitoring the generation process and switching between models based on confidence scores.
+This repository contains implementations of monitoring decoding algorithms that use a base model and an expert model to eliminate the hallucinations in the LLM's generated output. The approach involves monitoring the generation process and switching between models based on confidence scores.
 
 ## Features
 
