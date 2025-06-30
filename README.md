@@ -87,8 +87,8 @@ monitoring_decoding/
 ├── generate_text.py          # Main generation script
 ├── evaluate_gsm8k.py         # GSM8K evaluation
 ├── evaluation_em.py          # EM evaluation for QA tasks
+├── decoding.py           # Decoding algorithms
 ├── utils/
-│   ├── decoding.py           # Decoding algorithms
 │   ├── generation_probs.py   # Probability calculations
 │   ├── metric_utils.py       # Evaluation metrics
 │   ├── tokenize.py           # Tokenization utilities
@@ -106,7 +106,7 @@ monitoring_decoding/
 - `--expert_model`: Expert model name
 - `--width`: Search width for generation
 - `--depth`: Length of generated candidates
-- `--branch`: Number of candidates to generate
+- `--branch`: Number of candidates being remained
 - `--r`: Ratio threshold for decoding
 - `--data_num`: Number of data points to process
 
